@@ -1,0 +1,16 @@
+:root {
+    --sans-serif: Arial, Helvetica, sans-serif;
+    --pink: fuchsia;
+    --blue: #00d3d7;
+    --grey: #7a7878;
+}
+
+.left-nav, .right-nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.title {
+    text-align: center;
+    font-size: 3rem;
+}
