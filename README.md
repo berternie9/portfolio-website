@@ -1,5 +1,6 @@
-# Portfolio: Bernadine Dao
-This is my ;ortfolio website. Here, you can find my:
+# Bernadine Dao's Portfolio Website
+This is my portfolio website. 
+Here, you can find my:
 - Contact details
 - Professional Summary
 - Education
