@@ -1,8 +1,14 @@
 :root {
-    --sans-serif: Arial, Helvetica, sans-serif;
-    --pink: fuchsia;
-    --blue: #00d3d7;
-    --grey: #7a7878;
+    --pink: rgb(207, 55, 141);
+    --lightpink: rgb(210, 113, 153);
+    --lightestpink: rgb(213, 146, 174);
+    --palepink: rgba(239, 201, 216, 0.765);
+    --blue: #499ab5;
+    --paleblue: #c9eced;
+    --grey: #d2d2d2;
+    --cream: rgb(246, 226, 215);
+    --transparent-white: rgba(255,255,255,0.3);
+    --website-font-family: "Gaegu", sans-serif; 
 }
 
 .left-nav, .right-nav {
@@ -13,4 +19,8 @@
 .title {
     text-align: center;
     font-size: 3rem;
+}
+
+body {
+    font-family: var(--website-font-family);
 }
