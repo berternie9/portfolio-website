@@ -135,6 +135,10 @@ iframe {
     border: none;
 }
 
+img {
+    width: 100%;
+}
+
 p {
     margin: 0.25rem 0 0.5rem 0;
     font-weight: lighter;
