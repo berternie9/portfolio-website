@@ -6,8 +6,7 @@ Here, you can find my:
 - Education
 - Experience
 - Skills 
-    - Technical
-    - Soft 
+- Strengths
 - Projects
     - Garden Planner
     - ScribeSpace
