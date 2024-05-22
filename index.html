@@ -3,31 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="static/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./static/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="static/reset.css">
-    <link rel="stylesheet" href="static/style.css">
-    <script defer src="app.js"></script>
+    <link rel="stylesheet" href="./static/reset.css">
+    <link rel="stylesheet" href="./static/style.css">
+    <script defer src="./app.js"></script>
     <title>Portfolio: Bernadine Dao</title>
 </head>
 <body>
     <div class="page-wrapper">
         <header></header>
         <main>
-            <h1 class="title">Bernadine Dao</h1>
-            <h2 class="subtitle">Portfolio</h2>
+            <div class="titles">
+                <h1 class="title">Bernadine Dao</h1>
+                <h2 class="subtitle">Portfolio</h2>
+            </div>
             <div class="content-wrapper">
                 <section class="background-info">
                     <div class="left-panel">
                         <div class="contact-details">
-                            <h3>Contact</h3>
-                            <div><img class="icon" src="static/email.png" alt="email">bernadine.dao@gmail.com</div>
-                            <div><img class="icon" src="static/phone.png" alt="phone">0426068501</div>
-                            <div><img class="icon" src="static/location.jpg" alt="location">Melbourne, VIC</div>
-                            <div><img class="icon" src="static/github.png" alt="github"><a href="https://github.com/berternie9">https://github.com/berternie9</a></div>
-                            <div><img class="icon" src="static/linkedin.jpg" alt="linkedin"><a href="https://www.linkedin.com/in/bernadine-dao/">https://www.linkedin.com/in/bernadine-dao/</a></div>
+                            <h3>Links</h3>
+                            <div><img class="icon" src="./static/github.png" alt="github"><a href="https://github.com/berternie9">https://github.com/berternie9</a></div>
+                            <div><img class="icon" src="./static/linkedin.jpg" alt="linkedin"><a href="https://www.linkedin.com/in/bernadine-dao/">https://www.linkedin.com/in/bernadine-dao/</a></div>
+                            <div><img class="icon" src="./static/location.jpg" alt="location">Melbourne, VIC</div>
                         </div>
                         <div>
                             <h3>Professional Summary</h3>
@@ -101,7 +101,7 @@
                             <li>Originally my Final Project for the CS50 course.</li>
                             <li>Developed an online yearly garden planner, with CRUD functionality for custom plants and gardens.</li>
                             <li>Integrated a weather API, which can display the weather at user-inputted coordinates.</li>
-                            <li>Incorporated a robust SQLite database to track plant and garden information, which I converted to PostgreSQL for deployment.</li>
+                            <li>Incorporated a robust SQLite database to track plant and garden information, which I converted to PostgreSQL for deployment on Render.</li>
                         </ul>
                         <h5>Technologies</h5>
                         <p>Python | Flask | PostgreSQL | HTML | CSS | Javascript | Render</p>
@@ -111,9 +111,9 @@
                     <div class="project">
                         <h4>ScribeSpace</h4>
                         <ul class="projects-ul">
-                            <li>A project that I built as part of the General Assembly course.</li>
+                            <li>A project that I built as part of the General Assembly Software Engineering course.</li>
                             <li>Developed an online reading companion and implemented CRUD features (e.g. adding new books, notes, reviews and vocabulary).</li>
-                            <li>Ensured industry benchmark features for user authentication, sessions, and routing conventions.</li>
+                            <li>Ensured industry benchmark features for user authentication, sessions, routing conventions using a REST API.</li>
                         </ul>
                         <h5>Technologies</h5>
                         <p>Node | Express | PostgreSQL | HTML | CSS | Javascript | Render</p>
@@ -125,7 +125,7 @@
                     <div class="project">
                         <h4>Tic Tac Toe</h4>
                         <ul class="projects-ul">
-                            <li>A project that I built as part of the General Assembly course.</li>
+                            <li>A project that I built as part of the General Assembly Software Engineering course.</li>
                             <li>Built a static web application for playing tic tac toe; either 2-player, or against a bot.</li>
                             <li>Incorporated 'finite state machine' and 'expert system AI' concepts into bot logic.</li>
                         </ul>
@@ -136,7 +136,7 @@
                         <h5>Deployed on GitHub Pages</h5>
                         <p><a href="https://berternie9.github.io/tic-tac-toe/">https://berternie9.github.io/tic-tac-toe/</a></p>
                         <h5>Screenshot</h5>
-                        <img src="static/tic-tac-toe-screenshot.png" alt="tic tac toe screenshot">
+                        <img src="./static/tic-tac-toe-screenshot.png" alt="tic tac toe screenshot">
                     </div>
                 </section>
             </div>

@@ -9,11 +9,13 @@
     --cream: rgb(246, 226, 215);
     --transparent-white: rgba(255,255,255,0.3);
     --website-font-family: "Gaegu", sans-serif; 
-    --border-color: black;
+    --border-color: rgb(30, 213, 189);
+    --background-image-transparent-radial: radial-gradient(rgba(255, 255, 255, 0.735), rgba(255, 255, 255, 0.025));
+    --background-image-transparent-radial-small: radial-gradient(rgba(255, 255, 255, 0.586), rgba(255, 255, 255, 0.025) 80%);
 }
 
 .background-info {
-
+    background-image: var(--background-image-transparent-radial);
     grid-template-columns: 1fr 1fr;
 }
 
@@ -39,19 +41,13 @@
     width: 1rem;
     display: inline-block;
     margin-right: 1rem;
+    border-radius: 3px;
 }
 
 .left-panel, .right-panel {
     padding: 0 1rem 1rem 1rem;
 }
 
-.project {
-    padding: 1rem 0;
-}
-
-.projects {
-    padding: 0 1rem;
-}
 
 .page-wrapper {
     min-height: 86%;
@@ -61,8 +57,21 @@
     padding: 0.5rem 0 0.25rem;
 }
 
+.project {
+    padding: 1rem 0;
+    background-image: var(--background-image-transparent-radial);
+}
+
 .projects {
+    padding: 0 1rem;
     border-top: 2px solid var(--border-color);
+}
+
+.projects h3 {
+    padding: 2rem;
+    background-image: var(--background-image-transparent-radial-small);
+    width: fit-content;
+    margin: 0 auto;
 }
 
 .skills-left, .skills-right, .strengths-ul, .experience-ul, .projects-ul {
@@ -86,7 +95,13 @@
     text-align: center;
     font-size: 2.4rem;
     width: fit-content;
-    margin: 1.5rem auto auto;
+    margin: 3rem auto auto;
+}
+
+.titles {
+    background-image: var(--background-image-transparent-radial-small);
+    width: fit-content;
+    margin: 0 auto;
 }
 
 a {
@@ -95,6 +110,7 @@ a {
 
 body {
     font-family: var(--website-font-family);
+    background: var(--paleblue);
 }
 
 footer {
@@ -103,7 +119,7 @@ footer {
 }
 
 h3 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding-top: 1rem;
     padding-bottom: 0.25rem;
 }
