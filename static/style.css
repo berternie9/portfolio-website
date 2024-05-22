@@ -106,6 +106,7 @@
 
 a {
     text-decoration: underline;
+    text-decoration-color: var(--border-color);
 }
 
 body {
