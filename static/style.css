@@ -112,6 +112,7 @@ a {
 body {
     font-family: var(--website-font-family);
     background: var(--paleblue);
+    background-image: var(--background-image-transparent-radial);
 }
 
 footer {
