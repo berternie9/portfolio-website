@@ -6,16 +6,19 @@
     --blue: #499ab5;
     --paleblue: #c9eced;
     --grey: #d2d2d2;
-    --cream: rgb(246, 226, 215);
+    --cream: rgb(251, 238, 232);
+    --darkgrey: linear-gradient(to bottom, #1f2436, #374887) ;
     --transparent-white: rgba(255,255,255,0.3);
-    --website-font-family: "Gaegu", sans-serif; 
+    --website-font-family: "Helvetica", sans-serif;
+    --website-font-weight: lighter;
+    --website-font-family-accent: "Gaegu", sans-serif; 
     --border-color: rgb(30, 213, 189);
     --background-image-transparent-radial: radial-gradient(rgba(255, 255, 255, 0.735), rgba(255, 255, 255, 0.025));
     --background-image-transparent-radial-small: radial-gradient(rgba(255, 255, 255, 0.586), rgba(255, 255, 255, 0.025) 80%);
+    --background-image-transparent-linear: linear-gradient(to right, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
 }
 
 .background-info {
-    background-image: var(--background-image-transparent-radial);
     grid-template-columns: 1fr 1fr;
 }
 
@@ -23,18 +26,21 @@
     display: inline-block;
 }
 
-.contact-details div {
+.contact-details-div div {
     margin: 0.25rem 0;
 }
 
-.content-wrapper {
-    border-top: 2px solid var(--border-color);
-    border-bottom: 2px solid var(--border-color);
-    margin: 0 2rem;
+.contact-details-div, .professional-summary-div, .skills-div, .education-div, .experience-div, .strengths-div {
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background-image: var(--background-image-transparent-linear);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 2px solid var(--border-color);
 }
 
-.experience-ul {
-    font-weight: lighter;
+.content-wrapper {
+    margin: 0 1rem;
 }
 
 .icon {
@@ -45,7 +51,7 @@
 }
 
 .left-panel, .right-panel {
-    padding: 0 1rem 1rem 1rem;
+    padding: 0 1rem;
 }
 
 
@@ -58,20 +64,21 @@
 }
 
 .project {
-    padding: 1rem 0;
-    background-image: var(--background-image-transparent-radial);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background-image: var(--background-image-transparent-linear);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 2px solid var(--border-color);
 }
 
 .projects {
     padding: 0 1rem;
-    border-top: 2px solid var(--border-color);
 }
 
 .projects h3 {
-    padding: 2rem;
-    background-image: var(--background-image-transparent-radial-small);
     width: fit-content;
-    margin: 0 auto;
+    margin: 1rem auto;
 }
 
 .skills-left, .skills-right, .strengths-ul, .experience-ul, .projects-ul {
@@ -86,20 +93,17 @@
 
 .subtitle {
     text-align: center;
-    font-size: 1.6rem;
     width: fit-content;
     margin: 0 auto 1rem auto;
 }
 
 .title {
     text-align: center;
-    font-size: 2.4rem;
     width: fit-content;
     margin: 3rem auto auto;
 }
 
 .titles {
-    background-image: var(--background-image-transparent-radial-small);
     width: fit-content;
     margin: 0 auto;
 }
@@ -110,9 +114,10 @@ a {
 }
 
 body {
-    font-family: var(--website-font-family);
-    background: var(--paleblue);
-    background-image: var(--background-image-transparent-radial);
+    font-family: var(--website-font-family-accent);
+    font-weight: var(--website-font-weight);
+    background: var(--darkgrey);
+    color: var(--cream);
 }
 
 footer {
@@ -120,19 +125,29 @@ footer {
     margin: 1rem;
 }
 
+/* h1, h2, h3, h4, h5, h6 {
+    font-family: var(--website-font-family-accent);
+} */
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
 h3 {
     font-size: 1.5rem;
-    padding-top: 1rem;
-    padding-bottom: 0.25rem;
 }
 
 h4 {
     text-decoration: underline;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 h5 {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .iframe-container {
@@ -169,43 +184,54 @@ p {
         grid-template-columns: 3fr 5fr;
     }
 
+    .contact-details-div, .professional-summary-div, .skills-div, .education-div, .experience-div, .strengths-div {
+        margin-bottom: 2rem;
+        padding: 1rem;
+    }
+
     .content-wrapper {
         margin: 0 3rem;
-    }
-
-    .heading {
-        font-size: 1.5rem;
-        padding-top: 1rem;
-        padding-bottom: 0.3rem;
-    }
-   
-    .left-panel {
-        border-right: 2px solid var(--border-color);
-    }
-
-    .project {
-        margin: 0 auto 1rem auto;
-        max-width: 50vw;
-        padding: 1rem;
-        border: 2px solid var(--border-color);
-        border-radius: 5px;
-    }
-    
-    .projects {
-        border-top: 2px solid var(--border-color);
     }
 
     .projects h3 {
         text-align: center;
     }
 
+    .project {
+        margin-bottom: 2rem;
+    }
+
     .subtitle {
-        font-size: 2rem;
         margin: 0 auto 2rem auto;
     }
     
     .title {
-        font-size: 3rem;
         margin: 3rem auto auto;
+    }
+
+
+    body {
+        font-size: 1.1rem;
+    }
+
+    h1 {
+        font-size: 3.2rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    h4 {
+        text-decoration: underline;
+        font-size: 1.3rem;
+    }
+
+    h5 {
+        font-size: 1.3rem;
     }
 }
