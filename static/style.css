@@ -32,7 +32,7 @@
 
 .contact-details-div, .professional-summary-div, .skills-div, .education-div, .experience-div, .strengths-div {
     border: 1px solid var(--border-color);
-    border-radius: 5px;
+    border-radius: 10px;
     background-image: var(--background-image-transparent-linear);
     margin-bottom: 1rem;
     padding: 1rem;
@@ -41,6 +41,14 @@
 
 .content-wrapper {
     margin: 0 1rem;
+}
+
+.experience-subdiv {
+    margin-bottom: 1rem;
+}
+
+.experience-subdiv:last-child {
+    margin-bottom: 0;
 }
 
 .icon {
@@ -65,7 +73,7 @@
 
 .project {
     border: 1px solid var(--border-color);
-    border-radius: 5px;
+    border-radius: 10px;
     background-image: var(--background-image-transparent-linear);
     margin-bottom: 1rem;
     padding: 1rem;
@@ -79,6 +87,11 @@
 .projects h3 {
     width: fit-content;
     margin: 1rem auto;
+    padding: 1rem;
+    border: var(--border-color) 2px dashed;
+    border-radius: 10px;
+    background-image: var(--background-image-transparent-linear);
+    
 }
 
 .skills-left, .skills-right, .strengths-ul, .experience-ul, .projects-ul {
@@ -94,18 +107,22 @@
 .subtitle {
     text-align: center;
     width: fit-content;
-    margin: 0 auto 1rem auto;
+    margin: 0 auto;
 }
 
 .title {
     text-align: center;
     width: fit-content;
-    margin: 3rem auto auto;
+    margin: 0 auto;
 }
 
 .titles {
     width: fit-content;
-    margin: 0 auto;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: var(--border-color) 2px dashed;
+    border-radius: 10px;
+    background-image: var(--background-image-transparent-linear);
 }
 
 a {
@@ -138,7 +155,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 h4 {
@@ -199,16 +216,9 @@ p {
 
     .project {
         margin-bottom: 2rem;
+        max-width: 80vw;
+        margin: 2rem auto;
     }
-
-    .subtitle {
-        margin: 0 auto 2rem auto;
-    }
-    
-    .title {
-        margin: 3rem auto auto;
-    }
-
 
     body {
         font-size: 1.1rem;
@@ -223,7 +233,7 @@ p {
     }
 
     h3 {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
 
     h4 {
