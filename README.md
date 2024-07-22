@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-Check out my website [here](https://berternie9.github.io/portfolio-website/)!
+Check out my website [here](https://bernadine-dao.dev/)!
 
 ## Technologies used
 
