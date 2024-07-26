@@ -1,145 +1,163 @@
 :root {
-    --pink: rgb(207, 55, 141);
-    --lightpink: rgb(210, 113, 153);
-    --lightestpink: rgb(213, 146, 174);
-    --palepink: rgba(239, 201, 216, 0.765);
-    --blue: #499ab5;
-    --paleblue: #c9eced;
-    --grey: #d2d2d2;
-    --cream: rgb(251, 238, 232);
-    --darkgrey: linear-gradient(to bottom, #232941, #374887) ;
-    --transparent-white: rgba(255,255,255,0.3);
-    --website-font-family: "Helvetica", sans-serif;
-    --website-font-weight: lighter;
-    --website-font-family-accent: "Gaegu", sans-serif; 
-    --border-color: rgb(30, 213, 189);
-    --background-image-transparent-radial: radial-gradient(rgba(255, 255, 255, 0.735), rgba(255, 255, 255, 0.025));
-    --background-image-transparent-radial-small: radial-gradient(rgba(255, 255, 255, 0.586), rgba(255, 255, 255, 0.025) 80%);
-    --background-image-transparent-linear: linear-gradient(to right, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.07));
+  --pink: rgb(207, 55, 141);
+  --lightpink: rgb(210, 113, 153);
+  --lightestpink: rgb(213, 146, 174);
+  --palepink: rgba(239, 201, 216, 0.765);
+  --blue: #499ab5;
+  --paleblue: #c9eced;
+  --grey: #d2d2d2;
+  --cream: rgb(251, 238, 232);
+  --darkgrey: linear-gradient(to bottom, #232941, #374887);
+  --transparent-white: rgba(255, 255, 255, 0.3);
+  --website-font-family: "Helvetica", sans-serif;
+  --website-font-weight: lighter;
+  --website-font-family-accent: "Gaegu", sans-serif;
+  --border-color: rgb(30, 213, 189);
+  --background-image-transparent-radial: radial-gradient(
+    rgba(255, 255, 255, 0.735),
+    rgba(255, 255, 255, 0.025)
+  );
+  --background-image-transparent-radial-small: radial-gradient(
+    rgba(255, 255, 255, 0.586),
+    rgba(255, 255, 255, 0.025) 80%
+  );
+  --background-image-transparent-linear: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.07),
+    rgba(255, 255, 255, 0.07)
+  );
 }
 
 .background-info {
-    grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .contact-line {
-    display: inline-block;
+  display: inline-block;
 }
 
 .contact-details-div div {
-    margin: 0.25rem 0;
+  margin: 0.25rem 0;
 }
 
-.contact-details-div, .professional-summary-div, .skills-div, .education-div, .experience-div, .strengths-div {
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
-    background-image: var(--background-image-transparent-linear);
-    margin-bottom: 1rem;
-    padding: 1rem;
-    border: 2px solid var(--border-color);
+.contact-details-div,
+.professional-summary-div,
+.skills-div,
+.education-div,
+.experience-div,
+.strengths-div {
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  background-image: var(--background-image-transparent-linear);
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 2px solid var(--border-color);
 }
 
 .content-wrapper {
-    margin: 0 1rem;
+  margin: 0 1rem;
 }
 
 .experience-subdiv {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .experience-subdiv:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .icon {
-    width: 1rem;
-    display: inline-block;
-    margin-right: 1rem;
-    border-radius: 3px;
+  width: 1rem;
+  display: inline-block;
+  margin-right: 1rem;
+  border-radius: 3px;
 }
 
-.left-panel, .right-panel {
-    padding: 0 1rem;
+.left-panel,
+.right-panel {
+  padding: 0 1rem;
 }
-
 
 .page-wrapper {
-    min-height: 86%;
+  min-height: 86%;
 }
 
 .project h5 {
-    padding: 0.5rem 0 0.25rem;
+  padding: 0.5rem 0 0.25rem;
 }
 
 .project {
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
-    background-image: var(--background-image-transparent-linear);
-    margin-bottom: 1rem;
-    padding: 1rem;
-    border: 2px solid var(--border-color);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  background-image: var(--background-image-transparent-linear);
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 2px solid var(--border-color);
 }
 
 .projects {
-    padding: 0 1rem;
+  padding: 0 1rem;
 }
 
 .projects h3 {
-    width: fit-content;
-    margin: 1rem auto;
-    padding: 1rem;
-    border: var(--border-color) 2px dashed;
-    border-radius: 10px;
-    background-image: var(--background-image-transparent-linear);
-    
+  width: fit-content;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: var(--border-color) 2px dashed;
+  border-radius: 10px;
+  background-image: var(--background-image-transparent-linear);
 }
 
-.skills-left, .skills-right, .strengths-ul, .experience-ul, .projects-ul {
-    margin: 0;
-    padding: 0 1.2rem;
+.skills-left,
+.skills-right,
+.strengths-ul,
+.experience-ul,
+.projects-ul {
+  margin: 0;
+  padding: 0 1.2rem;
 }
 
 .skills-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .subtitle {
-    text-align: center;
-    width: fit-content;
-    margin: 0 auto;
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .title {
-    text-align: center;
-    width: fit-content;
-    margin: 0 auto;
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .titles {
-    width: fit-content;
-    margin: 2rem auto;
-    padding: 1rem;
-    border: var(--border-color) 2px dashed;
-    border-radius: 10px;
-    background-image: var(--background-image-transparent-linear);
+  width: fit-content;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: var(--border-color) 2px dashed;
+  border-radius: 10px;
+  background-image: var(--background-image-transparent-linear);
 }
 
 a {
-    text-decoration: underline;
-    text-decoration-color: var(--border-color);
+  text-decoration: underline;
+  text-decoration-color: var(--border-color);
 }
 
 body {
-    font-family: var(--website-font-family-accent);
-    font-weight: var(--website-font-weight);
-    background: var(--darkgrey);
-    color: var(--cream);
+  font-family: var(--website-font-family-accent);
+  font-weight: var(--website-font-weight);
+  background: var(--darkgrey);
+  color: var(--cream);
 }
 
 footer {
-    text-align: center;
-    margin: 1rem;
+  text-align: center;
+  margin: 1rem;
 }
 
 /* h1, h2, h3, h4, h5, h6 {
@@ -147,101 +165,105 @@ footer {
 } */
 
 h1 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 h2 {
-    font-size: 2.2rem;
+  font-size: 2.2rem;
 }
 
 h3 {
-    font-size: 1.7rem;
+  font-size: 1.7rem;
 }
 
 h4 {
-    text-decoration: underline;
-    font-size: 1.2rem;
+  text-decoration: underline;
+  font-size: 1.2rem;
 }
 
 h5 {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .iframe-container {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    padding-top: 56.25%;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
 }
 
 iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    border: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border: none;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 p {
-    margin: 0.25rem 0 0.5rem 0;
-    font-weight: lighter;
+  margin: 0.25rem 0 0.5rem 0;
+  font-weight: lighter;
 }
 
-
 @media (min-width: 600px) {
-    .background-info {
-        display: grid;
-        grid-template-columns: 3fr 5fr;
-    }
+  .background-info {
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+  }
 
-    .contact-details-div, .professional-summary-div, .skills-div, .education-div, .experience-div, .strengths-div {
-        margin-bottom: 2rem;
-        padding: 1rem;
-    }
+  .contact-details-div,
+  .professional-summary-div,
+  .skills-div,
+  .education-div,
+  .experience-div,
+  .strengths-div {
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
 
-    .content-wrapper {
-        margin: 0 3rem;
-    }
+  .content-wrapper {
+    margin: 0 3rem;
+  }
 
-    .projects h3 {
-        text-align: center;
-    }
+  .projects h3 {
+    text-align: center;
+  }
 
-    .project {
-        margin-bottom: 2rem;
-        max-width: 80vw;
-        margin: 2rem auto;
-    }
+  .project {
+    margin-bottom: 2rem;
+    max-width: 60vw;
+    margin: 2rem auto;
+  }
 
-    body {
-        font-size: 1.1rem;
-    }
+  body {
+    font-size: 1.1rem;
+  }
 
-    h1 {
-        font-size: 3.2rem;
-    }
+  h1 {
+    font-size: 3.2rem;
+  }
 
-    h2 {
-        font-size: 2.2rem;
-    }
+  h2 {
+    font-size: 2.2rem;
+  }
 
-    h3 {
-        font-size: 1.8rem;
-    }
+  h3 {
+    font-size: 1.8rem;
+  }
 
-    h4 {
-        text-decoration: underline;
-        font-size: 1.3rem;
-    }
+  h4 {
+    text-decoration: underline;
+    font-size: 1.3rem;
+  }
 
-    h5 {
-        font-size: 1.3rem;
-    }
+  h5 {
+    font-size: 1.3rem;
+  }
 }
