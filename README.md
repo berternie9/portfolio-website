@@ -7,10 +7,5 @@ Check out my website [here](https://bernadine-dao.dev/)!
 ## Technologies used
 
 - HTML
-- CSS
+- CSS (vanilla)
 - GitHub Pages
-
-## Next steps
-
-- Working on my portfolio website 2.0 currently... watch this space!
-- Aiming to use ReactJS / NextJS / Sanity / Vercel / Tailwind
