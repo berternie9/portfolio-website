@@ -7,7 +7,7 @@
   --paleblue: #c9eced;
   --grey: #d2d2d2;
   --cream: rgb(251, 238, 232);
-  --darkgrey: linear-gradient(to bottom, #232941, #374887);
+  --bluegrey: linear-gradient(to bottom, #4185d4, #374887);
   --transparent-white: rgba(255, 255, 255, 0.3);
   --website-font-family: "Helvetica", sans-serif;
   --website-font-weight: lighter;
@@ -45,7 +45,8 @@
 .skills-div,
 .education-div,
 .experience-div,
-.strengths-div {
+.leadership-div,
+.certifications-div {
   border: 1px solid var(--border-color);
   border-radius: 10px;
   background-image: var(--background-image-transparent-linear);
@@ -110,8 +111,9 @@
 
 .skills-left,
 .skills-right,
-.strengths-ul,
+.certifications-ul,
 .experience-ul,
+.leadership-ul,
 .projects-ul {
   margin: 0;
   padding: 0 1.2rem;
@@ -151,7 +153,7 @@ a {
 body {
   font-family: var(--website-font-family-accent);
   font-weight: var(--website-font-weight);
-  background: var(--darkgrey);
+  background: var(--bluegrey);
   color: var(--cream);
 }
 
@@ -190,6 +192,7 @@ h5 {
   overflow: hidden;
   width: 100%;
   padding-top: 56.25%;
+  margin-top: 1rem;
 }
 
 iframe {
